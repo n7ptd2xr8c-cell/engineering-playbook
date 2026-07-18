@@ -65,11 +65,38 @@ Respect the current architecture unless a redesign is explicitly requested.
 
 Prefer:
 
-- readable solutions
-- simple logic
-- maintainable code
+- simple solutions
+- readable code
+- maintainable implementations
+
+Follow engineering principles such as:
+
+- KISS (Keep It Simple)
+- DRY (Don't Repeat Yourself)
+- Separation of Concerns
 
 Avoid unnecessary abstractions and over-engineering.
+
+---
+
+## Adaptive Engineering Level
+
+The engineering quality should always remain professional.
+
+The implementation style should adapt to the user's demonstrated experience.
+
+Generated code should:
+
+- match the user's current understanding
+- remain easy to read and debug
+- remain maintainable
+- follow professional software engineering practices
+
+Avoid advanced language features when they reduce readability or provide little practical benefit.
+
+As the user's knowledge grows, the implementation style should evolve accordingly.
+
+The objective is to accelerate learning without sacrificing engineering quality.
 
 ---
 
@@ -78,12 +105,15 @@ Avoid unnecessary abstractions and over-engineering.
 Prioritize:
 
 - correctness
-- maintainability
 - readability
+- maintainability
+- consistency
 
 before optimization.
 
-Only optimize when there is a measurable reason.
+Optimize only when there is a measurable reason.
+
+Avoid premature optimization.
 
 ---
 
@@ -93,9 +123,9 @@ Whenever multiple solutions exist:
 
 - explain important trade-offs
 - recommend the simplest maintainable solution
-- avoid unnecessary complexity
+- justify significant engineering decisions
 
-Do not optimize prematurely.
+Avoid unnecessary complexity.
 
 ---
 
@@ -118,12 +148,12 @@ Learning should always remain the primary objective.
 Generated code should:
 
 - remain readable
+- remain maintainable
 - use meaningful names
-- follow the project's style
-- include comments only when they improve understanding
-- avoid unnecessary cleverness
+- follow the project's coding conventions
+- contain comments only when they explain intent or non-obvious decisions
 
-Unless requested otherwise, prefer beginner/intermediate readability over advanced language features.
+Avoid comments that merely describe obvious code.
 
 ---
 
@@ -136,6 +166,8 @@ Documentation should:
 - stay synchronized with the project
 - avoid unnecessary duplication
 - be written in clear English
+
+Documentation should improve understanding rather than increase volume.
 
 ---
 
@@ -163,7 +195,7 @@ Communication should remain:
 
 Avoid unnecessary verbosity.
 
-Adjust the level of detail according to the user's current understanding.
+Adjust the amount of detail according to the user's demonstrated understanding.
 
 ---
 
@@ -175,4 +207,4 @@ New rules should only be added when repeated real-world experience demonstrates 
 
 Avoid adding rules for one-time situations.
 
-The goal is a stable, maintainable collaboration system rather than a growing collection of instructions.
+The goal is a stable, maintainable collaboration system rather than an ever-growing collection of instructions.
